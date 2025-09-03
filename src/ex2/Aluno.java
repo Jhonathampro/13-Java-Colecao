@@ -1,5 +1,9 @@
-public class Aluno
-{
+package ex2;
+
+import java.util.HashSet;
+import java.util.Objects;
+
+public class Aluno {
     private int rm;
     private String nome;
     private String curso;
@@ -8,11 +12,6 @@ public class Aluno
         this.rm = rm;
         this.nome = nome;
         this.curso = curso;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("Rm=%d | aluno=%s | curso=%s", rm, nome, curso);
     }
 
     public int getRm() {
@@ -39,4 +38,21 @@ public class Aluno
         this.curso = curso;
     }
 
+    @Override
+    public String toString() {
+        return String.format("rm=%d | nome=%s | curso=%s",
+                rm, nome, curso);
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Aluno aluno)) return false;
+        return rm == aluno.rm;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(rm);
+    }
 }
