@@ -36,9 +36,5 @@ public class Main {
         Set<Aluno> soBd = new HashSet<>(turmaBd);
         soBd.removeAll(TurmaEd);
         soBd.forEach(Aluno -> System.out.println(Aluno));
-
-
-
-
     }
 }

@@ -24,5 +24,6 @@ public class Exercicio03 {
         tree.forEach( c -> {
             System.out.println(c + " --> " + contador.get(c));
         });
+        // arvore rubro negro
     }
 }
