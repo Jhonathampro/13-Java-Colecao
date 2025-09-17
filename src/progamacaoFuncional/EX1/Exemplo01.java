@@ -1,4 +1,4 @@
-package progamacaoFuncional;
+package progamacaoFuncional.EX1;
 
 import java.util.stream.IntStream;
 
