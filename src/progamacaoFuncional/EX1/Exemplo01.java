@@ -5,6 +5,11 @@ import java.util.stream.IntStream;
 public class Exemplo01 {
     public static void main(String[] args) {
         int[] x = {3, 4, 1, 7, 8};
+       // IntStream é um fluxo especializado para inteiros.
+        //  Ele serve para manipular dados numéricos (int[], ranges de números, etc.) de forma funcional.
+        //  É mais performático que usar Stream<Integer>.
+        // Pense no IntStream como uma esteira de números.
+        //of(...) coloca os números na esteira, um atrás do outro.
         IntStream fluxo = IntStream.of(x);
 
         // filtragem dos números impares
