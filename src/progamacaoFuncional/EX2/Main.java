@@ -36,7 +36,8 @@ public class Main {
                         .thenComparing(Empregado::salario).reversed())
                 .forEach(System.out::println);
 
-
+       // sorted → ordena os elementos do fluxo (padrão ou com Comparator).
+        //   Lambda → forma curta de escrever funções anônimas, muito usada para passar lógica (como critérios de ordenação).
 
     }
 }
